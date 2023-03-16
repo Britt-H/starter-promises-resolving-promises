@@ -1,5 +1,5 @@
 const { welcome, goodbye, tell } = require("../utils/fortune-teller");
 
-const promise = welcome();
-
-promise.then(console.log)
+welcome().then((result) => {
+    console.log("The result is:", result)
+})
